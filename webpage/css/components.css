@@ -581,6 +581,14 @@
   margin-bottom: 0.85rem;
 }
 
+.card__icon--img {
+  object-fit: cover;
+  background: none;
+  border-radius: 10px;
+  width: 3.5rem;
+  height: 3.5rem;
+}
+
 .section--alt .card {
   background: var(--surface-2);
 }
@@ -969,6 +977,15 @@
   font-size: 0.95rem;
   letter-spacing: 0.02em;
   margin-bottom: 0.8rem;
+}
+
+.profile-card__avatar--photo {
+  object-fit: cover;
+  object-position: center top;
+  background: none;
+  border-color: rgba(15, 118, 110, 0.25);
+  width: 4rem;
+  height: 4rem;
 }
 
 .profile-card__name {
