@@ -1,0 +1,38 @@
+/* Debias — design tokens */
+:root {
+  --bg: #f7f7f8;
+  --bg-tint: #eef2f1;
+  --surface: #ffffff;
+  --surface-2: #fafafa;
+  --surface-3: #f2f4f3;
+  --border: #e5e7e9;
+  --border-strong: #d4d7da;
+  --text: #0b0f12;
+  --text-muted: #4b5258;
+  --text-subtle: #6b7278;
+
+  --accent: #0f766e;
+  --accent-hover: #0d9488;
+  --accent-strong: #115e59;
+  --accent-soft: #ecfdf5;
+  --accent-ring: rgba(15, 118, 110, 0.18);
+
+  --ink: #0b0f12;
+  --ink-2: #1f242a;
+
+  --radius: 16px;
+  --radius-sm: 10px;
+  --radius-xs: 6px;
+
+  --shadow-xs: 0 1px 1px rgba(10, 14, 18, 0.04);
+  --shadow-sm: 0 1px 2px rgba(10, 14, 18, 0.06), 0 1px 3px rgba(10, 14, 18, 0.04);
+  --shadow-md: 0 6px 18px rgba(10, 14, 18, 0.06), 0 2px 6px rgba(10, 14, 18, 0.04);
+  --shadow-lg: 0 18px 40px rgba(10, 14, 18, 0.08), 0 4px 10px rgba(10, 14, 18, 0.04);
+
+  --header-h: 64px;
+  --content-max: 1080px;
+  --content-narrow: 720px;
+
+  --ease: cubic-bezier(0.22, 0.61, 0.36, 1);
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+}
