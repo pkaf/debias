@@ -1,7 +1,7 @@
 # Debias
 
-Is a website for AI  conslutancy, audit and general AI training agency.
+Is a website for Data Science Conslutancy, ML and Algorithm Audit and Business Training agency.
 
 ## Overview
 
-**Debias** is an AI  data science consultancy, audit and general AI and business training agency. 
+**Debias** is a website for Data Science Conslutancy, ML and Algorithm Audit and Business Training agency. 

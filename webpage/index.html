@@ -3,9 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Debias — data science consultancy, audit, and AI &amp; business training." />
+  <meta name="description" content="Debias — data science consultancy, ML &amp; algorithm audit, and business training." />
+  <meta name="theme-color" content="#0f766e" />
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; base-uri 'self'; form-action 'self'; upgrade-insecure-requests;" />
-  <title>Debias — Data science · Audit · Training</title>
+  <title>Debias — Data science · ML audit · Business training</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
@@ -19,120 +20,102 @@
   <header class="site-header" id="top">
     <div class="container site-header__inner">
       <a class="brand" href="index.html" aria-label="Debias home">
-        <span class="brand__mark" aria-hidden="true"></span>
-        <span class="brand__text">Debias</span>
+        <img class="brand__logo" src="asset/rectangular_logo.png" alt="Debias" width="400" height="220" />
       </a>
       <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Open menu">
         <span class="nav-toggle-bar" aria-hidden="true"></span>
         <span class="nav-toggle-bar" aria-hidden="true"></span>
       </button>
       <nav class="nav" id="primary-nav" aria-label="Primary">
-        <a href="index.html#services">Services</a>
-        <a href="index.html#approach">Approach</a>
+        <a href="services.html">Services</a>
+        <a href="training.html">Training</a>
         <a href="about.html">About</a>
-        <a href="privacy.html">Privacy</a>
-        <a class="btn btn--primary" href="index.html#contact">Contact</a>
+        <a class="btn btn--primary btn--sm" href="#contact">Contact</a>
       </nav>
     </div>
   </header>
 
   <main id="main">
     <section class="hero">
-      <div class="container">
-        <p class="hero__eyebrow">Data science · Audit · AI &amp; business training</p>
-        <h1 class="hero__title">Evidence-led decisions, defensible models, capable teams.</h1>
-        <p class="hero__lead">
-          Debias is a data science consultancy and audit partner, and we run practical training in AI
-          and business skills—so your organisation can ship work you trust.
-        </p>
-        <div class="hero__actions">
-          <a class="btn btn--primary" href="#contact">Request a scope</a>
-          <a class="btn btn--ghost" href="#services">View services</a>
+      <div class="container hero__grid">
+        <div>
+          <span class="hero__badge">Empowering Intelligent Enterprise</span>
+          <h1 class="hero__title">Closing the gap between technical work and accountable decisions.</h1>
+          <p class="hero__lead">
+            Debias is a data science consultancy, ML and algorithm audit and business training agency. We provide data science
+            consultancy, independent ML and algorithm audits, and practical business training.
+          </p>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="services.html">Explore services</a>
+            <a class="btn btn--ghost" href="#contact">Contact us</a>
+          </div>
         </div>
+        <figure class="hero__figure">
+          <img
+            class="hero__image"
+            src="asset/unbiasing_intro.png"
+            alt="Illustration: debiasing data and AI workflows"
+            loading="eager"
+            decoding="async"
+          />
+        </figure>
       </div>
     </section>
 
-    <div class="strip" role="note">
-      <div class="container strip__inner">
-        Independent reviews · Clear deliverables · Plain-language reporting · No lock-in tooling pitches
-      </div>
-    </div>
-
-    <section class="section" id="services">
+    <section class="section section--tight" aria-label="Pick a path">
       <div class="container">
-        <h2 class="section__title">What we offer</h2>
+        <p class="section__eyebrow">Start here</p>
+        <h2 class="section__title">Pick the door that matches your need</h2>
         <p class="section__intro">
-          Three ways to work together—standalone or combined—depending on the risk, timeline, and
-          capability gap you need to close.
+          Each page covers scope, typical outcomes, and how an engagement runs. Unsure where to start?
+          <a href="#contact">Send a short note</a> and we’ll point you the right way.
         </p>
         <div class="cards">
-          <article class="card">
-            <h3 class="card__title">Data science consultancy</h3>
+          <a class="card card--link" href="services.html">
+            <span class="card__icon" aria-hidden="true">SV</span>
+            <h3 class="card__title">Services</h3>
             <p class="card__body">
-              Experiment design, modelling strategy, evaluation, and documentation when outcomes must
-              hold up to scrutiny—internal or external.
+              Data science consultancy and independent ML &amp; algorithm audit for data, models, and
+              governance.
             </p>
-          </article>
-          <article class="card">
-            <h3 class="card__title">Audit &amp; assurance</h3>
+            <span class="card__cta" aria-hidden="true">Explore services →</span>
+          </a>
+          <a class="card card--link" href="training.html">
+            <span class="card__icon" aria-hidden="true">TR</span>
+            <h3 class="card__title">Business training</h3>
             <p class="card__body">
-              Structured reviews of data pipelines, model governance, and decision workflows—with
-              severity-ranked findings and remediation paths.
+              Practical training for leaders and teams: AI literacy, data skills, and decision-making
+              workshops.
             </p>
-          </article>
-          <article class="card">
-            <h3 class="card__title">Training</h3>
+            <span class="card__cta" aria-hidden="true">See training →</span>
+          </a>
+          <a class="card card--link" href="about.html">
+            <span class="card__icon" aria-hidden="true">AB</span>
+            <h3 class="card__title">About</h3>
             <p class="card__body">
-              Workshops for technical and business teams: responsible use of AI, statistical literacy,
-              and decision hygiene without the hype.
+              Who we are, how we think about accountable AI, and the people behind the engagements.
             </p>
-          </article>
+            <span class="card__cta" aria-hidden="true">Meet the team →</span>
+          </a>
         </div>
-      </div>
-    </section>
-
-    <section class="section section--alt" id="approach">
-      <div class="container split">
-        <div>
-          <h2 class="section__title">How engagements run</h2>
-          <p class="section__intro">A predictable rhythm so stakeholders know what to expect each week.</p>
-          <ol class="steps">
-            <li>
-              <span class="step-num" aria-hidden="true">1</span>
-              <span class="step-text"><strong>Frame</strong> — goals, constraints, decision rights, and success measures.</span>
-            </li>
-            <li>
-              <span class="step-num" aria-hidden="true">2</span>
-              <span class="step-text"><strong>Review</strong> — artefacts, interviews, and evidence as agreed in the charter.</span>
-            </li>
-            <li>
-              <span class="step-num" aria-hidden="true">3</span>
-              <span class="step-text"><strong>Deliver</strong> — findings, options, and a practical plan with owners.</span>
-            </li>
-            <li>
-              <span class="step-num" aria-hidden="true">4</span>
-              <span class="step-text"><strong>Transfer</strong> — optional enablement so your team can sustain the work.</span>
-            </li>
-          </ol>
-        </div>
-        <aside class="aside" aria-label="Engagement principles">
-          Scopes are explicit, timelines are realistic, and recommendations are written to be acted on—
-          not to impress a slide deck.
-        </aside>
       </div>
     </section>
 
     <section class="section cta" id="contact">
       <div class="container">
         <div class="cta__panel">
+          <p class="section__eyebrow">Contact</p>
           <h2 class="cta__title">Tell us what you need to validate or build.</h2>
           <p class="cta__text">
-            Share sector, timeline, and whether you want consultancy, audit, training, or a blend.
+            Share sector, timeline, and whether you’re after consultancy, audit, training, or a blend.
             We reply with a short scoping note and suggested next step.
           </p>
-          <p class="cta__email">
-            <a href="mailto:contact@debias.example">contact@debias.example</a>
-            <span class="cta__note">Replace with your production address before launch.</span>
+          <div class="cta__actions">
+            <a class="btn btn--primary" href="mailto:contact@debias.com.au?subject=Debias%20enquiry">Email us</a>
+            <a class="btn btn--ghost" href="about.html#leadership">Meet the team</a>
+          </div>
+          <p class="cta__meta">
+            Or write directly to <a href="mailto:contact@debias.com.au">contact@debias.com.au</a>
           </p>
         </div>
       </div>
@@ -140,19 +123,49 @@
   </main>
 
   <footer class="site-footer">
-    <div class="container site-footer__inner">
-      <div class="site-footer__brand">
-        <span class="brand__mark brand__mark--sm" aria-hidden="true"></span>
-        <span>Debias</span>
+    <div class="container">
+      <div class="site-footer__grid">
+        <div>
+          <div class="footer-col__brand">
+            <img class="brand__logo brand__logo--sm" src="asset/rectangular_logo.png" alt="Debias" width="400" height="220" />
+          </div>
+          <p class="footer-col__blurb">
+            Data science consultancy, ML &amp; algorithm audit, and business training—helping teams
+            ship work they can defend.
+          </p>
+        </div>
+        <nav aria-label="Company">
+          <p class="footer-col__title">Company</p>
+          <ul class="footer-list">
+            <li><a href="about.html">About</a></li>
+            <li><a href="about.html#leadership">Leadership</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <nav aria-label="Offerings">
+          <p class="footer-col__title">Offerings</p>
+          <ul class="footer-list">
+            <li><a href="services.html#consultancy">Data science consultancy</a></li>
+            <li><a href="services.html#audit">ML &amp; algorithm audit</a></li>
+            <li><a href="training.html">Business training</a></li>
+          </ul>
+        </nav>
+        <nav aria-label="Legal">
+          <p class="footer-col__title">Legal</p>
+          <ul class="footer-list">
+            <li><a href="privacy.html">Privacy policy</a></li>
+            <li><a href="terms.html">Terms &amp; conditions</a></li>
+            <li><a href="mailto:contact@debias.com.au">contact@debias.com.au</a></li>
+          </ul>
+        </nav>
       </div>
-      <div class="site-footer__notes">
-        <p>Debias provides professional services for informational purposes. Nothing here is legal, financial, or regulated advice.</p>
-        <p>Deliverables depend on access and materials you provide; decisions remain with your leadership.</p>
-        <p>This static preview does not set non-essential cookies. Add analytics or forms only with an updated notice and lawful basis.</p>
+
+      <div class="footer-bottom">
+        <span>© <span data-year></span> Debias. All rights reserved.</span>
+        <span>
+          <a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a> · <a href="about.html">About</a>
+        </span>
       </div>
-      <p class="site-footer__copy">
-        © <span data-year></span> Debias · <a class="footer-link" href="about.html">About</a> · <a class="footer-link" href="privacy.html">Privacy</a>
-      </p>
     </div>
   </footer>
 

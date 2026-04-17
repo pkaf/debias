@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="About Debias — data science consultancy, audit, and training." />
+  <meta name="theme-color" content="#0f766e" />
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; base-uri 'self'; form-action 'self'; upgrade-insecure-requests;" />
   <title>About — Debias</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -19,42 +20,53 @@
   <header class="site-header">
     <div class="container site-header__inner">
       <a class="brand" href="index.html" aria-label="Debias home">
-        <span class="brand__mark" aria-hidden="true"></span>
-        <span class="brand__text">Debias</span>
+        <img class="brand__logo" src="asset/rectangular_logo.png" alt="Debias" width="400" height="220" />
       </a>
       <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Open menu">
         <span class="nav-toggle-bar" aria-hidden="true"></span>
         <span class="nav-toggle-bar" aria-hidden="true"></span>
       </button>
       <nav class="nav" id="primary-nav" aria-label="Primary">
-        <a href="index.html#services">Services</a>
-        <a href="index.html#approach">Approach</a>
+        <a href="services.html">Services</a>
+        <a href="training.html">Training</a>
         <a href="about.html" aria-current="page">About</a>
-        <a href="privacy.html">Privacy</a>
-        <a class="btn btn--primary" href="index.html#contact">Contact</a>
+        <a class="btn btn--primary btn--sm" href="index.html#contact">Contact</a>
       </nav>
     </div>
   </header>
 
   <main id="about-main">
-    <section class="page-hero">
-      <div class="container">
-        <h1 class="page-hero__title">About Debias</h1>
-        <p class="page-hero__lead">
-          We help organisations use data and AI with proportionate rigour: useful models, honest
-          limitations, and teams that know how to ask the right questions.
+    <div class="container about-grid">
+      <article class="card">
+        <span class="card__icon" aria-hidden="true">✦</span>
+        <h2 class="card__title">Why we exist</h2>
+        <p class="card__body">
+          To close the gap between technical work and accountable decisions—no hype, no black boxes.
         </p>
-      </div>
-    </section>
+      </article>
+      <article class="card">
+        <span class="card__icon" aria-hidden="true">◇</span>
+        <h2 class="card__title">What we do</h2>
+        <p class="card__body">
+          Data science consultancy, independent ML &amp; algorithm audits, and practical business
+          training—delivered by senior practitioners.
+        </p>
+      </article>
+      <article class="card">
+        <span class="card__icon" aria-hidden="true">→</span>
+        <h2 class="card__title">Working with us</h2>
+        <p class="card__body">
+          A short scoping call, a clear charter, fixed deliverables. <a href="index.html#contact">Get in touch</a> to start.
+        </p>
+      </article>
+    </div>
 
     <section class="section section--alt profiles" id="leadership" aria-labelledby="profiles-heading">
       <div class="container">
-        <h2 class="section__title" id="profiles-heading">Leadership &amp; advisors</h2>
-        <p class="section__intro">
-          Key contacts across communications, finance governance, and advisory.
-        </p>
+        <p class="section__eyebrow">Team</p>
         <div class="profiles-grid">
           <article class="profile-card">
+            <span class="profile-card__avatar" aria-hidden="true">SS</span>
             <h3 class="profile-card__name">Dr. Sumi Shrestha</h3>
             <p class="profile-card__role">Public relations &amp; CMO</p>
             <dl class="profile-card__contact">
@@ -69,8 +81,12 @@
             </dl>
           </article>
           <article class="profile-card">
+            <span class="profile-card__avatar" aria-hidden="true">SK</span>
             <h3 class="profile-card__name">Sujan Kafle</h3>
-            <p class="profile-card__role">Chartered accountant · Director, <a href="https://interface.edu.np/about/" rel="noopener noreferrer" target="_blank">Interface Education</a></p>
+            <p class="profile-card__role">
+              Chartered accountant · Director,
+              <a href="https://interface.edu.np/about/" rel="noopener noreferrer" target="_blank">Interface Education</a>
+            </p>
             <dl class="profile-card__contact">
               <div>
                 <dt class="visually-hidden">Phone</dt>
@@ -83,6 +99,7 @@
             </p>
           </article>
           <article class="profile-card">
+            <span class="profile-card__avatar" aria-hidden="true">PK</span>
             <h3 class="profile-card__name">Dr. Prajwal Kafle</h3>
             <p class="profile-card__role">Advisor</p>
             <dl class="profile-card__contact">
@@ -99,47 +116,52 @@
         </div>
       </div>
     </section>
-
-    <div class="container about-grid">
-      <article class="card">
-        <h2 class="card__title">Why we exist</h2>
-        <p class="card__body">
-          Boards and operators need clarity—not buzzwords. Debias exists to shorten the distance
-          between technical work and accountable decisions, through consulting, audit-style reviews,
-          and training that respects your context.
-        </p>
-      </article>
-      <article class="card">
-        <h2 class="card__title">What we won’t do</h2>
-        <p class="card__body">
-          We don’t promise “100% accuracy,” sell proprietary black boxes you can’t explain, or
-          substitute slide decks for evidence. Every engagement ends with something you can defend.
-        </p>
-      </article>
-      <article class="card">
-        <h2 class="card__title">Working with us</h2>
-        <p class="card__body">
-          Start from the <a href="index.html#contact">contact</a> section on the home page. We’ll
-          agree a charter, access, and reporting format before work begins—no surprise scope creep.
-        </p>
-      </article>
-    </div>
   </main>
 
   <footer class="site-footer">
-    <div class="container site-footer__inner">
-      <div class="site-footer__brand">
-        <span class="brand__mark brand__mark--sm" aria-hidden="true"></span>
-        <span>Debias</span>
+    <div class="container">
+      <div class="site-footer__grid">
+        <div>
+          <div class="footer-col__brand">
+            <img class="brand__logo brand__logo--sm" src="asset/rectangular_logo.png" alt="Debias" width="400" height="220" />
+          </div>
+          <p class="footer-col__blurb">
+            Data science consultancy, ML &amp; algorithm audit, and business training—helping teams
+            ship work they can defend.
+          </p>
+        </div>
+        <nav aria-label="Company">
+          <p class="footer-col__title">Company</p>
+          <ul class="footer-list">
+            <li><a href="about.html">About</a></li>
+            <li><a href="about.html#leadership">Leadership</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <nav aria-label="Offerings">
+          <p class="footer-col__title">Offerings</p>
+          <ul class="footer-list">
+            <li><a href="services.html#consultancy">Data science consultancy</a></li>
+            <li><a href="services.html#audit">ML &amp; algorithm audit</a></li>
+            <li><a href="training.html">Business training</a></li>
+          </ul>
+        </nav>
+        <nav aria-label="Legal">
+          <p class="footer-col__title">Legal</p>
+          <ul class="footer-list">
+            <li><a href="privacy.html">Privacy policy</a></li>
+            <li><a href="terms.html">Terms &amp; conditions</a></li>
+            <li><a href="mailto:contact@debias.com.au">contact@debias.com.au</a></li>
+          </ul>
+        </nav>
       </div>
-      <div class="site-footer__notes">
-        <p>Debias provides professional services for informational purposes. Nothing here is legal, financial, or regulated advice.</p>
-        <p>Deliverables depend on access and materials you provide; decisions remain with your leadership.</p>
-        <p>This static preview does not set non-essential cookies. Add analytics or forms only with an updated notice and lawful basis.</p>
+
+      <div class="footer-bottom">
+        <span>© <span data-year></span> Debias. All rights reserved.</span>
+        <span>
+          <a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a> · <a href="about.html">About</a>
+        </span>
       </div>
-      <p class="site-footer__copy">
-        © <span data-year></span> Debias · <a class="footer-link" href="about.html">About</a> · <a class="footer-link" href="privacy.html">Privacy</a>
-      </p>
     </div>
   </footer>
 
