@@ -582,14 +582,15 @@
 }
 
 .card__icon.card__icon--img {
+  display: block;
   object-fit: cover;
   background: none;
+  border: none;
   border-radius: 10px;
   width: 3.5rem;
   height: 3.5rem;
   min-width: 3.5rem;
   min-height: 3.5rem;
-  flex-shrink: 0;
 }
 
 .section--alt .card {
@@ -983,15 +984,16 @@
 }
 
 .profile-card__avatar.profile-card__avatar--photo {
+  display: block;
   object-fit: cover;
   object-position: center top;
   background: none;
-  border-color: rgba(15, 118, 110, 0.25);
+  border: 1px solid rgba(15, 118, 110, 0.25);
+  border-radius: 999px;
   width: 4rem;
   height: 4rem;
   min-width: 4rem;
   min-height: 4rem;
-  flex-shrink: 0;
 }
 
 .profile-card__name {
