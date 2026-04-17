@@ -1,2 +1,2 @@
-# debias
+# deBias
 Consultancy, audit, training website
