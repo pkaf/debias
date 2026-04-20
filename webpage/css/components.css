@@ -420,6 +420,46 @@
   border: 1px solid rgba(15, 118, 110, 0.2);
 }
 
+.conference-promo {
+  display: grid;
+  gap: 0.5rem;
+  padding: 1.1rem 1.2rem;
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius);
+  background: linear-gradient(135deg, var(--accent-soft), var(--surface) 58%);
+  box-shadow: var(--shadow-xs);
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.18s var(--ease), box-shadow 0.18s var(--ease);
+}
+
+.conference-promo:hover {
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-md);
+}
+
+.conference-promo__eyebrow {
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--accent-strong);
+}
+
+.conference-promo__title {
+  font-size: clamp(1.05rem, 2.2vw, 1.35rem);
+  line-height: 1.25;
+}
+
+.conference-promo__meta {
+  color: var(--text-muted);
+}
+
+.conference-promo__cta {
+  font-weight: 600;
+  color: var(--accent-strong);
+}
+
 /* ---------- Stats strip ---------- */
 .stats {
   background: var(--surface);
