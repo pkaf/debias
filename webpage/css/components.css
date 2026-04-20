@@ -937,6 +937,65 @@
   display: block;
 }
 
+.program-columns {
+  margin-top: 1.25rem;
+  display: grid;
+  gap: 1rem;
+}
+
+@media (min-width: 1100px) {
+  .program-columns {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.program-day {
+  overflow-x: auto;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+  box-shadow: var(--shadow-xs);
+}
+
+.program-day__title {
+  margin: 0;
+  padding: 0.85rem 0.9rem;
+  border-bottom: 1px solid var(--border);
+  font-size: 1rem;
+  font-weight: 700;
+  background: var(--surface-alt);
+}
+
+.program-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.program-table th,
+.program-table td {
+  border-bottom: 1px solid var(--border);
+  padding: 0.85rem 0.9rem;
+  text-align: left;
+  vertical-align: top;
+  font-size: 0.94rem;
+}
+
+.program-table th {
+  background: var(--surface-alt);
+  color: var(--text);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.program-table tbody tr:hover {
+  background: var(--accent-soft);
+}
+
+.program-table tbody tr:last-child td {
+  border-bottom: 0;
+}
+
 .eoi-form {
   margin-top: 1.2rem;
   padding: 1.35rem;
