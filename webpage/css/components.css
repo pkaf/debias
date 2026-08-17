@@ -679,6 +679,10 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 1.15rem;
   }
+
+  .cards--two {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 .card {
@@ -817,6 +821,24 @@
   font-size: 0.95rem;
 }
 
+.pillar-stack {
+  display: grid;
+  gap: 1.15rem;
+}
+
+.pillar-grid {
+  display: grid;
+  gap: 1.25rem;
+  margin-top: 1rem;
+}
+
+@media (min-width: 720px) {
+  .pillar-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 1.75rem;
+  }
+}
+
 .card__list {
   margin: 0.85rem 0 0;
   padding: 0;
@@ -948,6 +970,51 @@
   font-size: 0.8rem;
   font-weight: 600;
   letter-spacing: 0.01em;
+}
+
+.solution-banner--ideate {
+  border-left-color: #0057b8;
+  background:
+    linear-gradient(105deg, rgba(0, 87, 184, 0.1) 0%, transparent 42%),
+    var(--surface);
+}
+
+.solution-banner--ideate .solution-banner__index {
+  color: #0057b8;
+}
+
+.solution-banner--build {
+  border-left-color: #ffb81c;
+  background:
+    linear-gradient(105deg, rgba(255, 184, 28, 0.14) 0%, transparent 42%),
+    var(--surface);
+}
+
+.solution-banner--build .solution-banner__index {
+  color: #c99200;
+}
+
+.solution-banner--optimise {
+  border-left-color: #00205b;
+  background:
+    linear-gradient(105deg, rgba(0, 32, 91, 0.08) 0%, transparent 42%),
+    var(--surface);
+}
+
+.solution-banner--optimise .solution-banner__index {
+  color: #00205b;
+}
+
+[data-theme="dark"] .solution-banner--ideate .solution-banner__index {
+  color: #7eb3e8;
+}
+
+[data-theme="dark"] .solution-banner--build .solution-banner__index {
+  color: #ffc94d;
+}
+
+[data-theme="dark"] .solution-banner--optimise .solution-banner__index {
+  color: #a8c4f0;
 }
 
 @media (max-width: 560px) {
