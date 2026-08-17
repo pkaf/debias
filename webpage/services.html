@@ -3,17 +3,17 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Services — deBias: data science consultancy, ML &amp; algorithm audit, and business training." />
-  <meta name="theme-color" content="#0f766e" />
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; block-all-mixed-content; upgrade-insecure-requests;" />
+  <meta name="description" content="Services — deBias: data science consultancy, ML &amp; algorithm audit, technical solutions, and business training." />
+  <meta name="theme-color" content="#FFB81C" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; object-src 'none'; base-uri 'self'; form-action 'self' https://formspree.io; frame-ancestors 'none'; block-all-mixed-content; upgrade-insecure-requests;" />
   <meta name="referrer" content="strict-origin-when-cross-origin" />
   <title>Services — deBias</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/tokens.css" />
-  <link rel="stylesheet" href="css/base.css" />
-  <link rel="stylesheet" href="css/components.css" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/tokens.css?v=4" />
+  <link rel="stylesheet" href="css/base.css?v=4" />
+  <link rel="stylesheet" href="css/components.css?v=5" />
   <link rel="icon" type="image/png" href="asset/favicon.png" />
   <link rel="apple-touch-icon" href="asset/favicon.png" />
 </head>
@@ -25,28 +25,36 @@
       <a class="brand" href="index.html" aria-label="deBias home">
         <img class="brand__logo" src="asset/rectangular_logo.png" alt="deBias" width="400" height="220" />
       </a>
-      <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Open menu">
-        <span class="nav-toggle-bar" aria-hidden="true"></span>
-        <span class="nav-toggle-bar" aria-hidden="true"></span>
-      </button>
+      <div class="site-header__end">
+      <div class="header-controls">
+        <button type="button" class="theme-toggle" aria-label="Toggle theme">
+          <svg class="icon-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+        </button>
+        <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Open menu">
+          <span class="nav-toggle-bar" aria-hidden="true"></span>
+          <span class="nav-toggle-bar" aria-hidden="true"></span>
+        </button>
+      </div>
       <nav class="nav" id="primary-nav" aria-label="Primary">
+        <a href="index.html">Home</a>
         <a href="services.html" aria-current="page">Services</a>
+        <a href="industries.html">Industries</a>
         <a href="training.html">Training</a>
-        <a href="events.html">Events</a>
         <a href="about.html">About</a>
-        <a class="btn btn--primary btn--sm" href="index.html#contact">Contact</a>
+        <a class="btn btn--accent btn--sm" href="index.html#contact">Contact</a>
       </nav>
+      </div>
     </div>
   </header>
 
   <main id="services-main">
     <section class="page-hero">
       <div class="container">
-        <p class="page-hero__eyebrow">Services</p>
-        <h1 class="page-hero__title">Data science, ML audit, and business training under one roof.</h1>
+        <p class="page-hero__eyebrow">Professional Services</p>
+        <h1 class="page-hero__title">Data Science Consultancy, ML Audit &amp; Technical Solutions</h1>
         <p class="page-hero__lead">
-          Three ways to engage—data science consultancy, ML &amp; algorithm audit, and business
-          training. Combine them when the same team must both decide and defend.
+          We transform complex, unstructured datasets into actionable intelligence. As a dedicated data science consultancy tailored for small-to-medium enterprises (SMEs), we respond rapidly to evolving challenges. You will always work directly with principal data scientists—never non-technical account representatives.
         </p>
       </div>
     </section>
@@ -58,13 +66,12 @@
             <img class="card__icon card__icon--img" src="asset/DataScienceConsultancy.png" alt="" aria-hidden="true" width="56" height="56" />
             <h2 class="card__title">Data science consultancy</h2>
             <p class="card__body">
-              Experiment design, modelling strategy, evaluation, and documentation when outcomes must
-              hold up to scrutiny - internal or external.
+              Experiment design, modelling strategy, evaluation, and documentation when outcomes must hold up to scrutiny—internal or external.
             </p>
             <ul class="card__list">
               <li>Problem framing &amp; success metrics</li>
               <li>Model &amp; evaluation design</li>
-              <li>Reproducible pipelines and reporting</li>
+              <li>Reproducible pipelines &amp; reporting</li>
               <li>Pre-launch validation &amp; sign-off</li>
             </ul>
           </article>
@@ -72,8 +79,7 @@
             <img class="card__icon card__icon--img" src="asset/MLandAlgoAudit.png" alt="" aria-hidden="true" width="56" height="56" />
             <h2 class="card__title">ML &amp; algorithm audit</h2>
             <p class="card__body">
-              Independent review of machine-learning systems and decision algorithms - covering data,
-              models, and governance, with severity-ranked findings and remediation paths.
+              Independent review of machine-learning systems and decision algorithms—covering data, models, and governance, with severity-ranked findings and remediation paths.
             </p>
             <ul class="card__list">
               <li>Model risk, bias &amp; fairness review</li>
@@ -86,8 +92,7 @@
             <img class="card__icon card__icon--img" src="asset/BusinessTraining_Services.png" alt="" aria-hidden="true" width="56" height="56" />
             <h2 class="card__title">Business training</h2>
             <p class="card__body">
-              Need to build internal capability? We run workshops and short programs for leaders and
-              teams.
+              Need to build internal capability? We run workshops and short programs for leaders and technical teams.
             </p>
             <ul class="card__list">
               <li>AI literacy for leaders</li>
@@ -97,6 +102,96 @@
             <p class="card__body" style="margin-top:0.85rem;">
               <a href="training.html">See training offerings →</a>
             </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Australian SMEs Trust Us Section -->
+    <section class="section section--alt" id="trust">
+      <div class="container">
+        <div style="background: var(--surface); border: 1px solid var(--border-strong); border-radius: var(--radius-md); padding: var(--space-xl); box-shadow: var(--shadow-md);">
+          <p class="section__eyebrow">Local Commitment</p>
+          <h2 class="section__title" style="margin-bottom: 1rem;">Why Australian SMEs Trust Us</h2>
+          <p style="font-size: 1.1rem; line-height: 1.7; color: var(--text-muted); max-width: 54rem;">
+            Unlike generic off-the-shelf platforms or offshore agencies, we architect secure, sovereign data pipelines built specifically for the Australian regulatory environment. We guarantee data residency, strict local privacy compliance, and absolute protection of your commercial IP while actively empowering your internal technical team.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="solutions">
+      <div class="container">
+        <p class="section__eyebrow">Capabilities</p>
+        <h2 class="section__title">Technical solutions</h2>
+        <p class="section__intro">
+          Focused builds that replace intuition with evidence—from attribution to production MLOps.
+        </p>
+
+        <div class="solution-banners">
+          <article class="solution-banner">
+            <span class="solution-banner__index" aria-hidden="true">01</span>
+            <div class="solution-banner__body">
+              <h3 class="solution-banner__title">Marketing &amp; sales analytics</h3>
+              <p class="solution-banner__lead">Objective spend, pipeline, and retention signals—not vendor vanity metrics.</p>
+              <ul class="solution-banner__tags">
+                <li>True attribution</li>
+                <li>Lead scoring</li>
+                <li>Churn prediction</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="solution-banner">
+            <span class="solution-banner__index" aria-hidden="true">02</span>
+            <div class="solution-banner__body">
+              <h3 class="solution-banner__title">Product analytics &amp; experimentation</h3>
+              <p class="solution-banner__lead">Ship what the data supports. Kill what it doesn’t.</p>
+              <ul class="solution-banner__tags">
+                <li>Feature-usage audit</li>
+                <li>A/B &amp; multivariate tests</li>
+                <li>Hypothesis validation</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="solution-banner">
+            <span class="solution-banner__index" aria-hidden="true">03</span>
+            <div class="solution-banner__body">
+              <h3 class="solution-banner__title">Institutional-grade dashboards</h3>
+              <p class="solution-banner__lead">One source of truth. Charts that refuse to mislead.</p>
+              <ul class="solution-banner__tags">
+                <li>Power BI / Tableau / custom</li>
+                <li>De-biased visualisation</li>
+                <li>Executive KPIs</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="solution-banner">
+            <span class="solution-banner__index" aria-hidden="true">04</span>
+            <div class="solution-banner__body">
+              <h3 class="solution-banner__title">MLOps &amp; model lifecycle</h3>
+              <p class="solution-banner__lead">From notebooks to production—with monitoring that catches drift early.</p>
+              <ul class="solution-banner__tags">
+                <li>Production pipelines</li>
+                <li>Drift detection</li>
+                <li>Retraining CI/CD</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="solution-banner">
+            <span class="solution-banner__index" aria-hidden="true">05</span>
+            <div class="solution-banner__body">
+              <h3 class="solution-banner__title">Forward deployment</h3>
+              <p class="solution-banner__lead">Embedded data scientists who build on your stack—and leave capability behind.</p>
+              <ul class="solution-banner__tags">
+                <li>Embedded engineers</li>
+                <li>Cloud integration</li>
+                <li>Team upskilling</li>
+              </ul>
+            </div>
           </article>
         </div>
       </div>
@@ -128,28 +223,31 @@
           </ol>
         </div>
         <aside class="aside" aria-label="Engagement principles">
-          <strong>Principle.</strong> Scopes are explicit, timelines are realistic, and recommendations
-          are written to be acted on—not to impress a slide deck.
+          <strong>Principle.</strong> Scopes are explicit, timelines are realistic, and recommendations are written to be acted on—not to impress a slide deck.
         </aside>
       </div>
     </section>
 
-    <section class="section cta">
+    <section class="section cta" id="contact">
       <div class="container">
         <div class="cta__panel">
-          <p class="section__eyebrow">Next step</p>
+          <p class="section__eyebrow">Contact Us</p>
           <h2 class="cta__title">Scope a short discovery call.</h2>
           <p class="cta__text">
-            Take a free 30-minute call to decide whether an engagement makes sense, and in
-            what shape.
+            Take a free 30-minute call to decide whether an engagement makes sense, and in what shape.
           </p>
-          <div class="cta__actions">
+
+          <div class="cta__meta" style="margin-top: 1.5rem; text-align: left; display: grid; gap: 0.8rem; background: var(--surface-2); padding: 1.25rem; border-radius: var(--radius-sm); border: 1px solid var(--border);">
+            <div><strong>Why Choose deBias:</strong> Bespoke, hands-on, and purpose-built for Australian SMEs. Work directly with principal data scientists—no non-technical account representatives, and no inflated corporate overheads funding high-profile consultancy lifestyles.</div>
+            <div><strong>Phone:</strong> <a href="tel:0478595068">0478 595 068</a></div>
+            <div><strong>Locations:</strong> 161 Castlereagh Street, Sydney NSW 2000 &nbsp;·&nbsp; 4 Columbia Court, Norwest NSW 2153</div>
+            <div><strong>Email:</strong> <a href="mailto:contact@debias.com.au">contact@debias.com.au</a></div>
+          </div>
+
+          <div class="cta__actions" style="margin-top: 1.5rem;">
             <a class="btn btn--primary" href="mailto:contact@debias.com.au?subject=Services%20enquiry">Email us</a>
             <a class="btn btn--ghost" href="training.html">See training</a>
           </div>
-          <p class="cta__meta">
-            <a href="mailto:contact@debias.com.au">contact@debias.com.au</a>
-          </p>
         </div>
       </div>
     </section>
@@ -170,6 +268,7 @@
           <p class="footer-col__title">Company</p>
           <ul class="footer-list">
             <li><a href="about.html">About</a></li>
+            <li><a href="industries.html">Industries</a></li>
             <li><a href="about.html#leadership">Leadership</a></li>
             <li><a href="index.html#contact">Contact</a></li>
           </ul>
@@ -178,7 +277,7 @@
           <p class="footer-col__title">Offerings</p>
           <ul class="footer-list">
             <li><a href="services.html#consultancy">Data science consultancy</a></li>
-            <li><a href="services.html#audit">ML &amp; algorithm audit</a></li>
+            <li><a href="services.html#solutions">Technical Solutions</a></li>
             <li><a href="training.html">Business training</a></li>
           </ul>
         </nav>
@@ -200,6 +299,6 @@
     </div>
   </footer>
 
-  <script src="js/main.js"></script>
+  <script src="js/main.js?v=3"></script>
 </body>
 </html>

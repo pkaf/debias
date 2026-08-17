@@ -1,22 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="deBias — data science consultancy, ML &amp; algorithm audit, and business training." />
-  <meta name="theme-color" content="#0f766e" />
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; block-all-mixed-content; upgrade-insecure-requests;" />
+  <meta name="description"
+    content="deBias — data science consultancy, ML &amp; algorithm audit, and business training." />
+  <meta name="theme-color" content="#FFB81C" />
+  <meta http-equiv="Content-Security-Policy"
+    content="default-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; block-all-mixed-content; upgrade-insecure-requests;" />
   <meta name="referrer" content="strict-origin-when-cross-origin" />
   <title>deBias — Data science · ML audit · Business training</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/tokens.css" />
-  <link rel="stylesheet" href="css/base.css" />
-  <link rel="stylesheet" href="css/components.css" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/tokens.css?v=4" />
+  <link rel="stylesheet" href="css/base.css?v=4" />
+  <link rel="stylesheet" href="css/components.css?v=4" />
   <link rel="icon" type="image/png" href="asset/favicon.png" />
   <link rel="apple-touch-icon" href="asset/favicon.png" />
 </head>
+
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
 
@@ -25,92 +29,173 @@
       <a class="brand" href="index.html" aria-label="deBias home">
         <img class="brand__logo" src="asset/rectangular_logo.png" alt="deBias" width="400" height="220" />
       </a>
-      <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Open menu">
-        <span class="nav-toggle-bar" aria-hidden="true"></span>
-        <span class="nav-toggle-bar" aria-hidden="true"></span>
-      </button>
+      <div class="site-header__end">
+      <div class="header-controls">
+        <button type="button" class="theme-toggle" aria-label="Toggle theme">
+          <svg class="icon-sun" viewBox="0 0 24 24">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="icon-moon" viewBox="0 0 24 24">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+        <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="primary-nav"
+          aria-label="Open menu">
+          <span class="nav-toggle-bar" aria-hidden="true"></span>
+          <span class="nav-toggle-bar" aria-hidden="true"></span>
+        </button>
+      </div>
       <nav class="nav" id="primary-nav" aria-label="Primary">
+        <a href="index.html" aria-current="page">Home</a>
         <a href="services.html">Services</a>
+        <a href="industries.html">Industries</a>
         <a href="training.html">Training</a>
-        <a href="events.html">Events</a>
         <a href="about.html">About</a>
-        <a class="btn btn--primary btn--sm" href="#contact">Contact</a>
+        <a class="btn btn--accent btn--sm" href="#contact">Contact</a>
       </nav>
+      </div>
     </div>
   </header>
 
   <main id="main">
-    <section class="hero">
-      <div class="container hero__grid">
-        <div>
-          <span class="hero__badge">Bias free decision-making for all</span>
-          <h1 class="hero__title">deBias: The Gold Standard for Algorithmic Integrity</h1>
+    <section class="hero" aria-label="Introduction">
+      <div class="hero__media" aria-hidden="true"></div>
+      <div class="hero__scrim" aria-hidden="true"></div>
+      <div class="container">
+        <div class="hero__content">
+          <p class="hero__brand" aria-label="de-bias">de-bias</p>
+          <h1 class="hero__title">We help companies ideate, build, and optimise data-driven decisions.</h1>
           <p class="hero__lead">
-            We audit your AI and train your teams to build technology, leadership and accountability.
+            We are a team of former academics who've shipped data-driven models in industry—bringing research rigour to commercial decisions.
           </p>
           <div class="hero__actions">
             <a class="btn btn--primary" href="services.html">Explore services</a>
             <a class="btn btn--ghost" href="#contact">Contact us</a>
           </div>
         </div>
-        <figure class="hero__figure">
-          <img
-            class="hero__image"
-            src="asset/unbiasing_intro.png"
-            alt="Illustration: deBiasing data and AI workflows"
-            loading="eager"
-            decoding="async"
-          />
-        </figure>
       </div>
     </section>
 
-    <section class="section section--tight">
+    <section class="section section--tight section--alt" aria-label="Why deBias">
       <div class="container">
-        <a class="conference-promo" href="events.html" aria-label="View event details for Invisible Banking in Sydney">
-          <span class="conference-promo__eyebrow">Upcoming conference</span>
-          <strong class="conference-promo__title">Invisible Banking: Mastering the Frictionless Digital Ecosystem</strong>
-          <span class="conference-promo__meta">Training happening on October 5-6 in Sydney.</span>
-          <span class="conference-promo__cta" aria-hidden="true">View program and register interest →</span>
-        </a>
+        <div class="trust-strip">
+          <div class="trust-strip__item reveal">
+            <div class="trust-strip__header">
+              <svg class="trust-strip__icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+              </svg>
+              <span>Principal-Led</span>
+            </div>
+            <div>Work directly with PhD data scientists—no non-technical middlemen.</div>
+          </div>
+          <div class="trust-strip__item reveal reveal-delay-1">
+            <div class="trust-strip__header">
+              <svg class="trust-strip__icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+              </svg>
+              <span>Independent &amp; Rigorous</span>
+            </div>
+            <div>Vendor-neutral audits and mathematically sound, reproducible pipelines.</div>
+          </div>
+          <div class="trust-strip__item reveal reveal-delay-2">
+            <div class="trust-strip__header">
+              <svg class="trust-strip__icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+              </svg>
+              <span>Sovereign &amp; Secure</span>
+            </div>
+            <div>Engineered for Australian data residency and strict privacy compliance.</div>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section class="section section--tight" aria-label="Pick a path">
+    <section class="section" aria-label="Core Practice Areas">
       <div class="container">
-        <p class="section__eyebrow">Start here</p>
-        <h2 class="section__title">Pick the door that matches your need</h2>
-        <p class="section__intro">
-          Each page covers scope, typical outcomes, and how an engagement runs. Unsure where to start?
-          <a href="#contact">Send a short note</a> and we’ll point you the right way.
+        <p class="section__eyebrow reveal">Practice Areas</p>
+        <h2 class="section__title reveal">Tailored solutions for data-driven organisations</h2>
+        <p class="section__intro reveal">
+          From first insight to production systems and continuous improvement—we partner with SMEs through the full ideate–build–optimise cycle.
         </p>
         <div class="cards">
-          <a class="card card--link" href="services.html">
-            <img class="card__icon card__icon--img" src="asset/Services.png" alt="" aria-hidden="true" width="56" height="56" />
-            <h3 class="card__title">Services</h3>
+          <article class="card card--ideate reveal" id="ideate">
+            <h3 class="card__title">Ideate</h3>
             <p class="card__body">
-              Data science consultancy and independent ML &amp; algorithm audit for data, models, and
-              governance.
+              Your think tank for data insight and machine learning. We help small and medium enterprises explore opportunities, sharpen questions, and build clear roadmaps for AI and analytics that fit how you actually work.
             </p>
-            <span class="card__cta" aria-hidden="true">Explore services →</span>
-          </a>
-          <a class="card card--link" href="training.html">
-            <img class="card__icon card__icon--img" src="asset/BusinessTraining.png" alt="" aria-hidden="true" width="56" height="56" />
-            <h3 class="card__title">Business training</h3>
+          </article>
+          <article class="card card--build reveal reveal-delay-1" id="build">
+            <h3 class="card__title">Build</h3>
             <p class="card__body">
-              Practical training for leaders and teams: AI literacy, data skills, and decision-making
-              workshops.
+              Bespoke, made-to-measure models and dashboards that answer your business questions—simple or complex. End-to-end delivery, hosted where you need it: AWS, Databricks, Tableau, and beyond.
             </p>
-            <span class="card__cta" aria-hidden="true">See training →</span>
-          </a>
-          <a class="card card--link" href="about.html">
-            <img class="card__icon card__icon--img" src="asset/About.png" alt="" aria-hidden="true" width="56" height="56" />
-            <h3 class="card__title">About</h3>
+          </article>
+          <article class="card card--optimise reveal reveal-delay-2" id="optimise">
+            <h3 class="card__title">Optimise</h3>
             <p class="card__body">
-              Who we are, how we think about accountable AI, and the people behind the engagements.
+              Focused engagements to assess current capabilities, design the next roadmap, scale what works, and surface bias in your analysis—through to full-scale data insight and ML audit.
             </p>
-            <span class="card__cta" aria-hidden="true">Meet the team →</span>
-          </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" aria-label="Frequently Asked Questions">
+      <div class="container container--narrow">
+        <p class="section__eyebrow reveal">FAQ</p>
+        <h2 class="section__title reveal">Frequently asked questions</h2>
+        <p class="section__intro reveal">
+          Everything you need to know about partnering with deBias.
+        </p>
+
+        <div class="accordion">
+          <details class="accordion__item" open>
+            <summary class="accordion__summary">
+              <span>What makes a deBias algorithm audit different?</span>
+              <svg class="accordion__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </summary>
+            <div class="accordion__content">
+              We conduct independent end-to-end reviews covering data lineage, model architecture, decision thresholds,
+              and governance policies. Deliverables include severity-ranked findings and practical remediation steps
+              that stand up to executive and regulatory scrutiny.
+            </div>
+          </details>
+
+          <details class="accordion__item">
+            <summary class="accordion__summary">
+              <span>How long does a typical consultancy or audit engagement take?</span>
+              <svg class="accordion__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </summary>
+            <div class="accordion__content">
+              Standard engagements run from 2 to 6 weeks depending on scope, model complexity, and team size. We operate
+              on a fixed-charter structure with weekly milestones so your team always has complete visibility.
+            </div>
+          </details>
+
+          <details class="accordion__item">
+            <summary class="accordion__summary">
+              <span>Can training programs be customized for our organization?</span>
+              <svg class="accordion__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </summary>
+            <div class="accordion__content">
+              Yes. Our business training workshops range from executive AI literacy briefings to intensive technical
+              upskilling, fully customized around your company’s tech stack, data culture, and industry domain.
+            </div>
+          </details>
         </div>
       </div>
     </section>
@@ -118,19 +203,26 @@
     <section class="section cta" id="contact">
       <div class="container">
         <div class="cta__panel">
-          <p class="section__eyebrow">Contact</p>
-          <h2 class="cta__title">Tell us what you need to validate or build.</h2>
+          <p class="section__eyebrow">Contact Us</p>
+          <h2 class="cta__title">Tell us what you need to ideate, build, or optimise.</h2>
           <p class="cta__text">
-            Share sector, timeline, and whether you’re after consultancy, audit, training, or a blend.
-            We reply with a short scoping note and suggested next step.
+            Share your sector, timeline, and whether you're after technical builds, data consultancy, independent audits, or training.
+            We will reply with a concise scoping note and proposed next step.
           </p>
-          <div class="cta__actions">
+
+          <div class="cta__meta"
+            style="margin-top: 1.5rem; text-align: left; display: grid; gap: 0.8rem; background: var(--surface-2); padding: 1.25rem; border-radius: var(--radius-sm); border: 1px solid var(--border);">
+            <div><strong>The deBias Advantage:</strong> Purpose-built for Australian SMEs and growing enterprises. Work directly with principal data scientists—eliminating non-technical intermediary layers and inflated consultancy overheads.</div>
+            <div><strong>Phone:</strong> <a href="tel:0478595068">0478 595 068</a></div>
+            <div><strong>Locations:</strong> 161 Castlereagh Street, Sydney NSW 2000 &nbsp;·&nbsp; 4 Columbia Court,
+              Norwest NSW 2153</div>
+            <div><strong>Email:</strong> <a href="mailto:contact@debias.com.au">contact@debias.com.au</a></div>
+          </div>
+
+          <div class="cta__actions" style="margin-top: 1.5rem;">
             <a class="btn btn--primary" href="mailto:contact@debias.com.au?subject=deBias%20enquiry">Email us</a>
             <a class="btn btn--ghost" href="about.html#leadership">Meet the team</a>
           </div>
-          <p class="cta__meta">
-            Or write directly to <a href="mailto:contact@debias.com.au">contact@debias.com.au</a>
-          </p>
         </div>
       </div>
     </section>
@@ -141,7 +233,8 @@
       <div class="site-footer__grid">
         <div>
           <div class="footer-col__brand">
-            <img class="brand__logo brand__logo--sm" src="asset/rectangular_logo.png" alt="deBias" width="400" height="220" />
+            <img class="brand__logo brand__logo--sm" src="asset/rectangular_logo.png" alt="deBias" width="400"
+              height="220" />
           </div>
           <p class="footer-col__blurb">
             Data science consultancy, ML &amp; algorithm audit, and business training—helping teams
@@ -152,6 +245,7 @@
           <p class="footer-col__title">Company</p>
           <ul class="footer-list">
             <li><a href="about.html">About</a></li>
+            <li><a href="industries.html">Industries</a></li>
             <li><a href="about.html#leadership">Leadership</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
@@ -160,7 +254,7 @@
           <p class="footer-col__title">Offerings</p>
           <ul class="footer-list">
             <li><a href="services.html#consultancy">Data science consultancy</a></li>
-            <li><a href="services.html#audit">ML &amp; algorithm audit</a></li>
+            <li><a href="services.html#solutions">Technical Solutions</a></li>
             <li><a href="training.html">Business training</a></li>
           </ul>
         </nav>
@@ -183,6 +277,7 @@
     </div>
   </footer>
 
-  <script src="js/main.js"></script>
+  <script src="js/main.js?v=2"></script>
 </body>
+
 </html>
