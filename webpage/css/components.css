@@ -1253,7 +1253,12 @@
   padding: 0.7rem 0.8rem;
   font: inherit;
   color: var(--text);
-  background: #fff;
+  background: var(--surface);
+}
+
+[data-theme="dark"] .form-field input,
+[data-theme="dark"] .form-field textarea {
+  background: var(--surface-2);
 }
 
 .form-field input:focus,
