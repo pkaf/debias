@@ -925,11 +925,15 @@
   padding: 1.4rem 1.3rem;
   border-radius: var(--radius);
   border: 1px solid var(--border);
-  background: linear-gradient(180deg, var(--accent-soft), #fff 120%);
+  background: linear-gradient(180deg, var(--accent-soft), var(--surface) 120%);
   color: var(--text-muted);
   font-size: 0.95rem;
   line-height: 1.55;
   box-shadow: var(--shadow-xs);
+}
+
+[data-theme="dark"] .aside {
+  background: var(--surface-2);
 }
 
 .aside strong {

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://debias.com.au/sitemap.xml
